@@ -12,7 +12,7 @@ The batch launcher and toolkit extends the z/OS SDK products with a set of Java 
 
 ## JZOS Toolkit API Sample Jobs
 
-### Class [CatalogSearchSample](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/CatalogSearchSample.html)
+### Class CatalogSearchSample
 
 Sample program that uses CatalogSearch, LOCATE and OBTAIN to display information about datasets matching a filter key. The filter key is given as an argument to main().
 
@@ -20,17 +20,17 @@ The sample program first uses CatalogSearch to get a list of datasets matching t
 
 If the complete lookup cannot be completed for a dataset (e.g. the volume not being mounted) a message is written and the dataset is skipped. 
 
-### Class [DynallocCopyDataset](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/DynallocCopyDataset.html)
+### Class DynallocCopyDataset
 
 Sample program that uses BPXWDYN to dynamically allocate a new dataset with the same attributes as a given dataset, and then copy the original to the new dataset. The name of the source dataset and target dataset names are given as arguments. 
 
-### Class [EnqUpdatePdsMember](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/EnqUpdatePdsMember.html)
+### Class EnqUpdatePdsMember
 
 Sample program that ENQs on a PDS / member in a manner compatible with ISPF and then updates the PDS member.
 
 The fully qualified dataset name is given as the first argument and the member name is given as the second argument.
 
-### Class [FileFactoryCopy](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/FileFactoryCopy.html)
+### Class FileFactoryCopy
 
   Sample program that uses the FileFactory class to copy a text file or dataset. The input and output file names are given as arguments to main, and they main be either POSIX (HFS) file names or MVS dataset names.
 
@@ -45,11 +45,11 @@ The fully qualified dataset name is given as the first argument and the member n
   
   > //MY.DATASET
 
-### Class [HelloWorld](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/HelloWorld.html)
+### Class HelloWorld
 
   Simple class that says hello on System.out and System.err
   
-### Class [MvsConsoleInteraction](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/MvsConsoleInteraction.html)
+### Class MvsConsoleInteraction
 
   This sample shows how JZOS can be used to interact with the MVS console.
 
@@ -60,43 +60,43 @@ The fully qualified dataset name is given as the first argument and the member n
   
   > If a stop command is received, the number of datasets processed is written to the MVS console and the program is exited via System.exit()
   
-### Class [MvsConsoleWrapper](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/MvsConsoleWrapper.html)
+### Class MvsConsoleWrapper
 
   This sample demonstrates a main program that can be used to wrap another main program while redirecting System.in and System.out to the MVS console.
   
-### Class [MvsJob](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/MvsJob.html)
+### Class MvsJob
 
   Simple bean which holds a MVS jobname and id.
   
-### Class [MvsJobOutput](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/MvsJobOutput.html)
+### Class MvsJobOutput
 
   Sample program which reads all sysout data for a MvsJob (jobname and jobid), and writes the output to a specified Writer. The class relies on the sample REXX script "jobOutput", spawned as a child process via the Exec class.
   
-### Class [MvsSubmitJob](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/MvsSubmitJob.html)
+### Class MvsSubmitJob
 
   Sample program which submits a job to the internal reader. Getting status for an executing job requires an APF authorized program interface to the subsystem API. The TSO "STATUS" command can be executed via the REXX "TSO" command processor to obtain this information. See the sample "jobStatus" REXX script.
 
-### Class [PdsLister](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/PdsLister.html)
+### Class PdsLister
 
   Sample program that lists a PDS directory.
   
-### Class [PeekOSMemory](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/PeekOSMemory.html)
+### Class PeekOSMemory
 
   Sample program that dumps 500 bytes from the CVT to System.out 
   
-### Class [ShowJavaProperties](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/ShowJavaProperties.html)
+### Class ShowJavaProperties
 
   Simple class used to display Java system properties and selected system environment variables
   
-### Class [StdinTester](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/StdinTester.html)
+### Class StdinTester
 
   Simple class which reads from System.in ('//STDIN DD in batch'), and copies to System.out ('//STDOUT')
   
-### Class [ZFileCopy](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/ZFileCopy.html)
+### Class ZFileCopy
 
   Sample program that uses the ZFile class to copy an MVS dataset in record mode from 'DD INPUT' to 'DD OUTPUT'. Note that "noseek" is used so that the file is opened in sequential mode, which dramatically increases I/O performance.
   
-### Class [ZFileKSDS](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/ZFileKSDS.html)
+### Class ZFileKSDS
 
   Sample program that inserts, updates, locates, and deletes records in a VSAM KSDS using ZFile.
 
@@ -115,13 +115,13 @@ The fully qualified dataset name is given as the first argument and the member n
         INDEX - 
           (NAME(SOMENAME.KSDS.IX)) 
 
-### Class [ZFilePrint](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/ZFilePrint.html)
+### Class ZFilePrint
 
   Sample program that prints an EBCDIC MVS dataset pointed to by '//INPUT DD' to System.out (stdout).
 
   The dataset is opened using the ZFile class in record mode. Note that "noseek" is used so that the file is opened in sequential mode, which dramatically increases I/O performance.
   
-### Class [ZipDatasetSource](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/ZipDatasetSource.html)
+### Class ZipDatasetSource
 
   A class that is used by ZipDatasets to handle the creation of zip file entries for z/OS datasets.
   Instances of this class are constructed using a dataset name or pattern, which can include:
@@ -144,7 +144,7 @@ The fully qualified dataset name is given as the first argument and the member n
 
   The name given to each entry is the actual MVS dataset name in upper case. If the entry is for a PDS member, then the dataset name is used as a directory name followed by the member name as a file name. 
   
-### Class [ZipDatasets](http://www.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.zsecurity.api.71.doc/com.ibm.jzos/com/ibm/jzos/sample/ZipDatasets.html)
+### Class ZipDatasets
 
   A sample Java main class that can be invoked to create a Zip archive from one or more datasets or PDS members. Datasets are treated as text and converted from EBCDIC to ASCII (ISO8859-1) or to the specified target codepage.
 
